@@ -12,7 +12,7 @@ const handleSubmit=async ()=> {
    setLoading(true);
    setError('');
    try{
-    const response = await axios.post("http://localhost:8080/api/email/generate",
+    const response = await axios.post("https://spring-boot-using-gemini-api-production.up.railway.app/api/email/generate",
     {  emailContent,
        tone
    });
